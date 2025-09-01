@@ -1,7 +1,0 @@
-project_id = "your-project-id" # GCP project id
-project_number = "123456789000" # Your GCP project number (find it in GCP console)
-region = "eu-east1" # GCP region 
-bucket_name = "give-me-a-name" # must be globally unique
-function_memory = "4Gi" # provisioned memory, keep as is unless you experience a function memory related problem
-source_zip_path = "./src/function-source.zip" # keep as is, except if you wish to execute your custom function in another path
-google_credentials_path = "/root/.config/gcloud/application_default_credentials.json" # keep as is, this is container path

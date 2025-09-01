@@ -1,0 +1,12 @@
+# env vars
+*.env
+*.tfvars
+# terraform state files
+*.tfstate
+*.tfstate.*
+# terraform init files
+terraform/.terraform/
+# deprecated files
+*_deprecated.*
+# logs
+*.log

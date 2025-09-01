@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  # Terraform container for infrastructure management
+  terraform:
+    image: hashicorp/terraform:1.5.0
+    container_name: terraform
+    working_dir: /workspace
+    volumes:
+      - ./terraform:/workspace
+      - ${GCLOUD_CONFIG_PATH}:/root/.config/gcloud:ro # read only access
+    entrypoint: [""]
+    command: ["tail", "-f", "/dev/null"]
